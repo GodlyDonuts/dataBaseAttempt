@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.0.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.0.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.0.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.0.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.0.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.0.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.0.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.0.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.0.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.0.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
+
+    <input id="zipcode" type="number" onkeypress="if(this.value.length==5) return false;" placeholder="zipcode">
+    <button type="button" id="button">check</button>
+
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDJKVCeVY3VgSGfe8HzG20iBAXEil8ZT3w",
+        authDomain: "avian-sandbox-392019.firebaseapp.com",
+        projectId: "avian-sandbox-392019",
+        storageBucket: "avian-sandbox-392019.appspot.com",
+        messagingSenderId: "546455963157",
+        appId: "1:546455963157:web:e0107566143e96da5e701c",
+        measurementId: "G-RMFMTK8QFB"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>
